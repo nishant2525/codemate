@@ -19,7 +19,7 @@ public class identity extends Activity {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
 
-                Intent intent =new Intent(identity.this,loginfaculty.class);
+                Intent intent =new Intent(identity.this,faculty.class);
                 startActivity(intent);
             }
         });
@@ -29,7 +29,7 @@ public class identity extends Activity {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
 
-                Intent intent =new Intent(identity.this,loginstudent.class);
+                Intent intent =new Intent(identity.this,student.class);
                 startActivity(intent);
             }
         });

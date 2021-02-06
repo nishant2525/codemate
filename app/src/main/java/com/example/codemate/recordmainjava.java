@@ -3,6 +3,7 @@ package com.example.codemate;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
@@ -29,11 +30,11 @@ import android.widget.Toast;
 import android.widget.ToggleButton;
 import android.widget.VideoView;
 
+import com.example.codemate.R;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
 
 public class recordmainjava extends Activity {
 
@@ -272,5 +273,3 @@ public class recordmainjava extends Activity {
     private void toggleScreenShare(ToggleButton toggleButton) {
     }
 }
-
-

@@ -9,27 +9,33 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class loginfaculty extends Activity {
+    private Button loginf;
+    private EditText usernamef;
+    private EditText passwordf;
+    private String user_nameff;
+    private String pass_wordff;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.loginfaculty);
-        Button login = (Button) findViewById(R.id.button11);
-        EditText username = (EditText) findViewById(R.id.editTextTextMultiLine1);
-        EditText password = (EditText) findViewById(R.id.editTextTextPassword21);
-        String user_name = username.getText().toString();
-        String pass_word = password.getText().toString();
-        login.setOnClickListener(new View.OnClickListener() {
+        loginf = (Button) findViewById(R.id.button11);
+        usernamef = (EditText) findViewById(R.id.editTextTextMultiLine1);
+        passwordf = (EditText) findViewById(R.id.editTextTextPassword21);
+        user_nameff = usernamef.getText().toString();
+        pass_wordff = passwordf.getText().toString();
+        loginf.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
-                if (user_name.equals("faculty") & pass_word.equals("faculty123")) {
+                if ((user_nameff.equals("faculty") )&& (pass_wordff.equals("123")) ){
                     Intent intent = new Intent(loginfaculty.this, faculty.class);
                     startActivity(intent);
                     Toast.makeText(getApplicationContext(), "Login successful", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Login failed", Toast.LENGTH_SHORT).show();
                 }
+                else {
+                 Toast.makeText(getApplicationContext(), "Login failed", Toast.LENGTH_SHORT).show();
+                 }
             }
 
         });
